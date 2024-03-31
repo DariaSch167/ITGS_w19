@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Блог</title>
+    <style>
+      body {
+        margin-left: 2rem;
+      }
+      .new_post {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+      }
+      #new_post_title,
+      #new_post_body {
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Новый пост</h1>
+    </header>
+    <div class="new_post">
+      <input
+        type="text"
+        id="new_post_title"
+        name="new_post_title"
+        class="form__input"
+        placeholder="Введите заголовок" />
+      <textarea
+        name="new_post_body"
+        id="new_post_body"
+        rows="8"
+        placeholder="Текст поста"></textarea>
+      <button id="new_post_save">Сохранить</button>
+    </div>
+    <div class="posts_container"></div>
+    <script src="./w19t3_addpost.js"></script>
+  </body>
+</html>

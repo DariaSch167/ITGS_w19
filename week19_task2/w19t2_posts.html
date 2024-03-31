@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No sense posts</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(110, 56, 49);
+        margin-top: 1rem;
+      }
+      img {
+        width: 20%;
+      }
+      .posts_container {
+        margin-top: 2rem;
+        width: 40%;
+      }
+      h2 {
+        color: rgb(79, 128, 91);
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      h2::first-letter {
+        text-transform: uppercase;
+      }
+      p {
+        color: rgb(110, 56, 49);
+        margin: 0;
+      }
+      p::first-letter {
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./book_pic.png" alt="Blog" />
+      <h1>No-sense API posts</h1>
+    </header>
+    <div class="posts_container"></div>
+    <script src="./w19t2_posts.js"></script>
+  </body>
+</html>
